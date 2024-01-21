@@ -1,3 +1,6 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .pdf-container {
     display: flex;
     justify-content: center;
@@ -17,9 +20,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin-bottom: 60px;
-    background-color: #999;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
 }
 
 .logo {
@@ -95,13 +97,6 @@ main {
     font-size: 20px;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #333;
-}
 
 /* Original .hero */
 .hero {
@@ -233,7 +228,7 @@ footer {
 
 #skills {
     background-color: #f9f9f9;
-    padding: 40px 0;
+    padding-top: 50px;
 }
 
 
@@ -328,6 +323,7 @@ footer {
 #current-projects {
     background-color: #f2f2f2;
     padding: 40px;
+    margin-top: 200px;
 }
 
 #current-projects .container {
@@ -489,13 +485,13 @@ footer {
 .education {
     flex-wrap: wrap;
     margin-bottom: 30px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .work {
     flex-wrap: wrap;
     margin-bottom: 30px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .research {
@@ -553,7 +549,7 @@ footer {
 }
 
 .image {
-    width: 40%;
+    width: 30%;
     height: inherit;
     padding: 30px;
     margin-bottom: 20px;
@@ -621,20 +617,85 @@ footer {
 
 #contact {
     margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.container.contact {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.contact-whole-container {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
+    flex-direction: column;
+    margin-right: 80px;
 }
 
 .contact-info {
     display: flex;
+    margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 .contact-info i {
-    margin-right: 10px;
+    margin-right: 20px;
+    font-size: 30px;
+    align-self: center;
+}
+
+#footer {
+    background-color: rgb(22, 24, 22);
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+}
+
+.footer-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration-line: none;
+    margin-right: 20px;
+}
+
+.footer-brands a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.footer-brands i {
+    margin-right: 20px;
+}
+
+footer {
+    align-self: baseline;
+    justify-self: center;
+    text-align: right;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 12px;
+    color: rgb(39, 84, 55);
 }
 
 
