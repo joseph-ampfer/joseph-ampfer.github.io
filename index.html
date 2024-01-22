@@ -22,92 +22,38 @@
         
         <title>Ampfer Portfolio</title>
         
-        <script>
-
-            // WORK EDUCATION RESEARCH TOGGLER
-            function show(element) {
-                let wer = document.querySelectorAll('.wer');
-                wer.forEach(section => section.classList.remove('show'));
-
-                let selected = document.querySelector(`.${element}`);
-                selected.classList.add('show');
-            }
-
-            // DOM CONTENT LOADED
-            document.addEventListener('DOMContentLoaded', function() {
-
-                let hero = document.querySelector('.hero-background');
-                // SCROLL BLUR //
-                document.addEventListener('scroll', function() {
-                    let scrollPosition = window.scrollY;
-                    let blurValue = scrollPosition / 50;
-                    hero.style.filter = `blur(${blurValue}px)`;
-                })
-
-                // BUTTON HIGHLIGHT TOGGLER
-                let buttons = document.querySelectorAll('.button');
-                buttons.forEach(button => button.addEventListener('click', function() {
-                    buttons.forEach(button => button.classList.remove('color'));
-                    button.classList.add('color');
-                }))
-
-                // FOCUS EDUCATION FIRST
-                document.querySelector('#education-button').click();
-
-            })
-
-            // function toggleDropdown(id) {
-            //     var element = document.getElementById(id);
-            //     if (element.classList.contains('collapsing') || !element.style.maxHeight) {
-            //         element.classList.remove('collapsing');
-            //         element.classList.add('expanding');
-            //     } else {
-            //         element.classList.remove('expanding');
-            //         element.classList.add('collapsing');
-            //     }
-            // }
-           
-        </script>
+        <script src="script.js"></script>
 
     </head>
-    <body >
-        <!--============HEADER===========--> 
-        <!--
-        <div id="header-container">
+
+<!-- =======================NAVBAR=========================--> 
+        
+    <div id="header-container">
         <header>
             <nav>
                 <div class="nav-container">
-                    <a href="#home" class="logo">
+                    <a href="#" class="logo">
                         <img src="images/joeyLogoPNG.png" alt="Joey Ampfer Logo">
                     </a>
+                    <!-- <a href="#" class="logo">
+                        Joey Ampfer
+                    </a> -->
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#achievements">Achievments</a></li>
+                        <li><a href="#work-education">History</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        </div>  
--->
-        <nav class="bg-light border navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><span class="blue">A</span><span class="red">M</span><span class="yellow">P</span><span class="green">F</span><span class="blue">E</span><span class="red">R</span> <span class="blue">Finance</span></a>
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ms-auto mt-2">
-                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
-                    </ul> 
-                </div>
-            </div>
-        </nav>
+    </div>  
+
+    <body >
+
 <!--=======================HOME==========================-->
         <section class="hero">
 
@@ -240,33 +186,8 @@
 
         </section>
             
-
-<!--==============ACHIEVEMENTS============-->
-        <!--
-        <section id="achievements">
-
-            <div class="container">
-                <h2>Key Acheivements</h2>
-                <div class="grid">
-                    <a href="link-to-detail-or-external-page-1" class="achievement">
-                        <img src="images/aimed.png" alt="AI in Medicine Interest Group">
-                        <p>Founder of AI in Medicine Interest Group at UK COM</p>
-                    </a>
-                    <a href="link-to-detail-or-external-page-1" class="achievement">
-                        <img src="images/award.jpg" alt="Top Student Award">
-                        <p>Top Student Award at UK COM</p>
-                    </a>
-                    <a href="link-to-detail-or-external-page-1" class="achievement">
-                        <img src="images/booksquare.png" alt="Teeny Tiny Doctors Book">
-                        <p>Author of 'Teeny Tiny Doctors'</p>
-                    </a>
-                </div>
-            </div>
-
-        </section>
-    -->
 <!--================ACHIEVEMENTS NEW BOOTSTRAP===================-->
-        <section class="achievements">
+        <section id="achievements">
             <h2 class="centered">Achievments</h2>
             <div class="card-container">
                 
@@ -568,37 +489,7 @@
         </div>
     </section>        
 
-    <!-- <form method="post" action="https://forms.un-static.com/forms/YOUR_ENDPOINT_REFERENCE">
-        <div class="form-group row">
-          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputName" placeholder="Please enter your name">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="input-group col-sm-10">
-            <div class="input-group-prepend"><i class="input-group-text fa fa-envelope"></i></div>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
-          <div class="col-sm-10">
-            <textarea name="inputMessage" cols="40" rows="8" class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-        </div>
-        <div class="text-center">
-          <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-        </div>
-    </form> -->
-
-<!--============PROJECTS OLD============-->
+<!--==============PROJECTS OLD==============-->
         <!-- <section id="current-projects">
 
             <div class="container">
@@ -616,46 +507,34 @@
         </section> -->
 
 <!--===========================FOOTER======================-->
-<section id="footer">
-    <div class="footer">
+        <section id="footer">
+            <div class="footer">
 
-        <div class="footer-name">
-            <h5>Joey Ampfer</h5>
-            <div style="font-size: 12px;">Fullstack Developer</div>
-        </div>
-    
-        <div class="footer-links">
-            <a href="#about" >Resume</a>
-            <a href="#portfolio" >Portfolio</a>
-            <a href="#contact" >Contact</a>
-        </div>
-    
-        <div class="footer-brands">
-            <a href="www.linkedin.com/in/joey-ampfer-5145b918b">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/joseph-ampfer">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
+                <div class="footer-name">
+                    <h5>Joey Ampfer</h5>
+                    <div style="font-size: 12px;">Fullstack Developer</div>
+                </div>
+            
+                <div class="footer-links">
+                    <a href="#about" >Resume</a>
+                    <a href="#portfolio" >Portfolio</a>
+                    <a href="#contact" >Contact</a>
+                </div>
+            
+                <div class="footer-brands">
+                    <a href="www.linkedin.com/in/joey-ampfer-5145b918b">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/joseph-ampfer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
 
-    </div>
-    <footer>
-        Copywrite &#169; Joey Ampfer 1999
-    </footer>
-</section>
-<!--=======================FOOTER OLD====================================-->
-        <!-- <div class="centered" style="font-size: 26px">
-            Joey Ampfer
-        </div>
-        <main class="centered">
-            Welcome to my homepage!
-            <div>
-                My resume: <a href="resume.pdf">here</a>
             </div>
-        </main>
-        <footer>
-            Copywrite &#169; Joey Ampfer 1999
-        </footer> -->
+            <footer>
+                Copywrite &#169; Joey Ampfer 1999
+            </footer>
+        </section>
+
     </body>
 </html>
