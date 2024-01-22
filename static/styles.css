@@ -1,20 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-.pdf-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-
-}
-
-.pdf-container object {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-}
-
 .centered {
     text-align: center;
 }
@@ -103,12 +89,6 @@ nav ul li a:hover {
     color: #ddd;
 }
 /* End nav menu */
-
-
-main {
-    font-size: 20px;
-}
-
 
 /* Original .hero */
 .hero {
@@ -247,18 +227,6 @@ main {
     transform: scale(1.2);
 }
 
-
-#research-experience {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-#research-experience .container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
 .timeline {
     position: relative;
     padding-left: 50px;
@@ -308,23 +276,6 @@ main {
     font-style: italic;
 }
 
-#current-projects {
-    background-color: #f2f2f2;
-    padding: 40px;
-    margin-top: 200px;
-}
-
-#current-projects .container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-#current-projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .project {
     background-color: white;
     padding: 20px;
@@ -339,25 +290,6 @@ main {
 
 .project p {
     line-height: 1.6;
-}
-
-#flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.social-icons img {
-    width: 100px;
-    height: 100px;
 }
 
 #achievements {
@@ -609,6 +541,7 @@ main {
 
 .footer-brands i {
     margin-right: 20px;
+    font-size: larger;
 }
 
 footer {
