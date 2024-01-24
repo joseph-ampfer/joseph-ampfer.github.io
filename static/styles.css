@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 52%;
+    width: 950px;
     margin: auto;
 }
 
@@ -59,10 +59,7 @@ header {
     left: 0;           
     width: 100%;       
     z-index: 1000;  
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
 }
-
 
 nav ul {
     list-style-type: none;
@@ -199,7 +196,6 @@ nav ul li a:hover {
     scroll-margin-top: 40px;
 }
 
-
 .more-link {
     display: block;
     background-color: #333;
@@ -227,71 +223,6 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-.timeline {
-    position: relative;
-    padding-left: 50px;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #4A90E2;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.timeline-icon {
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #4A90E2;
-    top: 0;
-}
-
-.timeline-content {
-    margin-left: 60px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-}
-
-.date {
-    display: block;
-    margin-top: 10px;
-    color: #777;
-    font-style: italic;
-}
-
-.project {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.project h3 {
-    margin-top: 0;
-}
-
-.project p {
-    line-height: 1.6;
-}
-
 #achievements {
     scroll-margin-top: 90px;
 }
@@ -304,7 +235,7 @@ nav ul li a:hover {
 }
 
 .accordion {
-    width: 51%;
+    width: 500px;
     margin-bottom: 20px;
 }
 
@@ -398,8 +329,12 @@ nav ul li a:hover {
     color: #999;
 }
 
+.carousel-item {
+    height: 600px;
+}
+
 .container.two {
-    width: 60%;
+    width: 1000px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -520,7 +455,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    width: 50%;
+    width: 900px;
 }
 
 .footer-name {
