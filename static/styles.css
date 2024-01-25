@@ -37,7 +37,7 @@ body {
     margin: auto;
 }
 
-#header-container::before {
+/* #header-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -48,7 +48,7 @@ body {
     background-size: contain;
     background-position: center;
     z-index: -1;
-}
+} */
 /* Navigation Menu */
 header {
     background-color: #000;
