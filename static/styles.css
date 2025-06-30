@@ -292,6 +292,8 @@ nav ul li a:hover {
 .card {
     text-align: center;
     background-color: black;
+    border-radius: 1.25rem;
+    overflow: hidden;
 }
 
 .education {
