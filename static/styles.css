@@ -525,6 +525,10 @@ iframe {
 .nav-link {
     color: white;
 }
+.carousel-indicators {
+    bottom: -30px;
+    margin-bottom: 0;
+}
 
 /* ==================== MOBILE BREAKPOINT ==================== */
 @media (max-width: 768px) {
