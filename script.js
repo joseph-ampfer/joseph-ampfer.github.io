@@ -1,31 +1,78 @@
-// WORK EDUCATION RESEARCH TOGGLER
-function show(element) {
-    let wer = document.querySelectorAll('.wer');
-    wer.forEach(section => section.classList.remove('show'));
+document.addEventListener('DOMContentLoaded', () => {
 
-    let selected = document.querySelector(`.${element}`);
-    selected.classList.add('show');
-}
+    /* ======================================================================
+       Mobile Navigation
+       ====================================================================== */
 
-// DOM CONTENT LOADED
-document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-    let hero = document.querySelector('.hero-background');
-    // SCROLL BLUR //
-    document.addEventListener('scroll', function() {
-        let scrollPosition = window.scrollY;
-        let blurValue = scrollPosition / 50;
-        hero.style.filter = `blur(${blurValue}px)`;
-    })
+    navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
 
-    // BUTTON HIGHLIGHT TOGGLER
-    let buttons = document.querySelectorAll('.button');
-    buttons.forEach(button => button.addEventListener('click', function() {
-        buttons.forEach(button => button.classList.remove('color'));
-        button.classList.add('color');
-    }))
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
 
-    // FOCUS EDUCATION FIRST
-    document.querySelector('#education-button').click();
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('open') &&
+            !navLinks.contains(e.target) &&
+            !navToggle.contains(e.target)) {
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
 
-})
+    /* ======================================================================
+       Scroll Animations (Intersection Observer)
+       ====================================================================== */
+
+    const animatedElements = document.querySelectorAll('.animate');
+
+    if (animatedElements.length > 0) {
+        const revealObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+        );
+
+        animatedElements.forEach(el => revealObserver.observe(el));
+    }
+
+    /* ======================================================================
+       Active Nav Link Highlighting
+       ====================================================================== */
+
+    const sections = document.querySelectorAll('main section[id]');
+    const navItems = document.querySelectorAll('.nav-link');
+
+    if (sections.length > 0 && navItems.length > 0) {
+        const navObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const targetHref = `#${entry.target.id}`;
+                        navItems.forEach(item => {
+                            item.classList.toggle('active', item.getAttribute('href') === targetHref);
+                        });
+                    }
+                });
+            },
+            { threshold: 0.2, rootMargin: '-80px 0px -60% 0px' }
+        );
+
+        sections.forEach(section => navObserver.observe(section));
+    }
+
+});

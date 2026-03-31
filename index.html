@@ -1,743 +1,379 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joseph Ampfer | Software Engineer</title>
+    <meta name="description" content="Software engineer specializing in real-time systems, mobile apps, and cloud infrastructure. NKU Applied Software Engineering, 4.0 GPA.">
+    <meta property="og:title" content="Joseph Ampfer | Software Engineer">
+    <meta property="og:description" content="Building real-time systems, mobile apps, and cloud infrastructure.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joseph-ampfer.github.io">
+    <link rel="canonical" href="https://joseph-ampfer.github.io">
+    <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, width=device-width">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+            <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15 3 21 3 21 9"/>
+            <line fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="10" y1="14" x2="21" y2="3"/>
+        </symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="7 10 12 15 17 10"/>
+            <line fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="15" x2="12" y2="3"/>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <rect fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="16" x="2" y="4" rx="2"/>
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/>
+        </symbol>
+        <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+            <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6 9 12 15 18 9"/>
+        </symbol>
+    </svg>
 
-        <!-- http://getbootstrap.com/docs/5.1/ -->
-        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> -->
-        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+    <header id="site-header">
+        <nav class="nav-inner" aria-label="Main navigation">
+            <a href="#" class="nav-logo" aria-label="Home">JA</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="4" y1="6" x2="20" y2="6"/>
+                    <line x1="4" y1="12" x2="20" y2="12"/>
+                    <line x1="4" y1="18" x2="20" y2="18"/>
+                </svg>
+            </button>
+            <ul class="nav-links" role="list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- https://favicon.io/emoji-favicons/ -->
-        <link href="static/favicon.png" rel="icon">
+    <main id="main">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-        <link href="static/styles.css" rel="stylesheet">
-
-        <script src="https://kit.fontawesome.com/2bc11de228.js" crossorigin="anonymous"></script>
-        
-        <title>Ampfer Portfolio</title>
-        
-        <script src="script.js"></script>
-
-    </head>
-
-<!-- =======================NAVBAR=========================--> 
-        
-    <div id="header-container">
-        <header>
-            <nav>
-                <div class="nav-container">
-                    <a href="#" class="logo">
-                        <img src="images/joeyLogoPNG.png" alt="Joey Ampfer Logo">
+        <!-- Hero -->
+        <section id="hero" class="hero" aria-label="Introduction">
+            <div class="container hero-container">
+                <p class="hero-label">Hi, I'm</p>
+                <h1 class="hero-name">Joseph Ampfer</h1>
+                <p class="hero-title">Software Engineer</p>
+                <p class="hero-tagline">I build real-time systems, mobile apps, and cloud infrastructure.</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/joseph-ampfer" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub profile">
+                        <svg width="22" height="22"><use href="#icon-github"/></svg>
                     </a>
-                    <!-- <a href="#" class="logo">
-                        Joey Ampfer
-                    </a> -->
-                    <!-- Hamburger menu for mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="border: none; background: transparent;">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNavbar">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: flex; gap: 1rem; align-items: center;">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#work-education">History</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <a href="https://linkedin.com/in/joseph-ampfer" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profile">
+                        <svg width="22" height="22"><use href="#icon-linkedin"/></svg>
+                    </a>
+                    <a href="resume.pdf" target="_blank" class="btn btn-primary">
+                        <svg width="16" height="16"><use href="#icon-download"/></svg>
+                        Resume
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="Scroll to content">
+                <svg width="20" height="20"><use href="#icon-chevron-down"/></svg>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-heading animate">About</h2>
+                <div class="about-content animate">
+                    <p>Software engineer with a background in molecular biology and clinical research. I bring the same rigor to building software that I brought to the lab&mdash;methodical, evidence-driven, and relentless about quality.</p>
+                    <p>Currently finishing my B.S. in Applied Software Engineering at NKU with a 4.0 GPA while shipping production software as Lead Mobile Developer at 3K Equalizer and former DevOps intern at GE Aerospace.</p>
+                </div>
+                <div class="stats animate">
+                    <div class="stat">
+                        <span class="stat-value">8+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">11+</span>
+                        <span class="stat-label">Frameworks &amp; Tools</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">1st</span>
+                        <span class="stat-label">Place Hackathon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-heading animate">Experience</h2>
+                <div class="experience-grid">
+                    <article class="exp-card animate">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-company">GE Aerospace</h3>
+                                <p class="exp-role">DevOps &amp; Cloud Engineering DT Intern</p>
+                            </div>
+                            <span class="exp-date">May &ndash; Aug 2025</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Architected a self-service CI/CD platform with AWS CodePipeline (GitHub &rarr; CodeBuild &rarr; ECR &rarr; ECS Fargate &rarr; ELB), cutting build-to-deployment time to 5 minutes</li>
+                            <li>Built a FastAPI backend and web UI for one-click repo setup with OIDC authentication and auth middleware proxy</li>
+                            <li>Selected as Tech Committee Focal for 12-member group; managed $1.5K budget and launched educational events</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card animate">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-company">3K Equalizer LLC</h3>
+                                <p class="exp-role">Lead Mobile Developer</p>
+                            </div>
+                            <span class="exp-date">May 2025 &ndash; Present</span>
+                        </div>
+                        <ul class="exp-list">
+                            <li>Architect and ship a React Native (TypeScript) app with workout tracking, real-time chat, and injury-screening modules</li>
+                            <li>Manage the full mobile release process including App Store and Play Store review submissions</li>
+                            <li>Collaborate with co-founder, UI designer, and domain experts to gather requirements and iterate on features</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-heading animate">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <article class="project-card featured animate" style="--card-gradient: linear-gradient(135deg, #7c3aed, #a855f7)">
+                        <div class="project-accent" aria-hidden="true"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">Spell Arena</h3>
+                            <p class="project-desc">Multiplayer combat game using webcam-based hand-gesture machine learning for a VR-like spellcasting experience. Host-authoritative peer-to-peer networking via Steam with real-time projectile and animation synchronization across clients.</p>
+                            <div class="project-tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Steam Networking</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card animate" style="--card-gradient: linear-gradient(135deg, #dc2626, #f97316)">
+                        <div class="project-accent" aria-hidden="true"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">Liar's Deck</h3>
+                            <p class="project-desc">Real-time multiplayer card game with server-authoritative logic and hidden state enforcement to prevent cheating. Private lobbies with join-by-code for friend-based matches, built with live turn-based gameplay over WebSockets.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">WebSockets</span>
+                            </div>
+                            <div class="project-links">
+                              <a href="https://github.com/joseph-ampfer/Bluff_Multiplayer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                  <svg width="14" height="14"><use href="#icon-github"/></svg>
+                                  GitHub
+                              </a>
+                          </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card animate" style="--card-gradient: linear-gradient(135deg, #0ea5e9, #6366f1)">
+                        <div class="project-accent" aria-hidden="true"></div>
+                        <!-- <div class="project-preview">
+                            <img src="images/chat-220.png" alt="Chat 220 interface showing AI chat with model selection and message input" loading="lazy">
+                        </div> -->
+                        <div class="project-body">
+                            <h3 class="project-title">Chat 220</h3>
+                            <p class="project-desc">AI-powered multimodal chat platform integrating 8 models including reasoning, vision, and image generation. Led a team of 3 to build and deploy with Google OAuth2 and 99.9% uptime on GCP Cloud Run.</p>
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">GCP</span>
+                                <span class="tag">AWS S3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://chat220.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="14" height="14"><use href="#icon-external"/></svg>
+                                    Live Site
+                                </a>
+                                <a href="https://github.com/joseph-ampfer/AI_Chat_220" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="14" height="14"><use href="#icon-github"/></svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card animate" style="--card-gradient: linear-gradient(135deg, #10b981, #34d399)">
+                        <div class="project-accent" aria-hidden="true"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">Touch Grass Royale</h3>
+                            <p class="project-desc">Full-stack mobile app gamifying reduced screen time through competitions, rewards, and cosmetic unlocks. Scalable backend on GCP Cloud Run with scheduled point calculations and push notifications.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">GCP</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=KHtSEtDAOKI" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="14" height="14"><use href="#icon-external"/></svg>
+                                    Demo Video
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card animate" style="--card-gradient: linear-gradient(135deg, #3b82f6, #6366f1)">
+                        <div class="project-accent" aria-hidden="true"></div>
+                        <div class="project-body">
+                            <h3 class="project-title">Self-Service Deployment Platform</h3>
+                            <p class="project-desc">Enterprise CI/CD platform at GE Aerospace enabling one-click Streamlit app deployments. Automated the full pipeline from GitHub to production with AWS CodePipeline, cutting build-to-deployment time to 5 minutes. Designed, built, and deployed the entire system solo.</p>
+                            <div class="project-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">OIDC</span>
+                                <span class="tag">ECS Fargate</span>
+                                <span class="tag">CodePipeline</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-heading animate">Skills</h2>
+                <div class="skills-grid animate">
+                    <div class="skill-group">
+                        <h3 class="skill-category">Languages</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">Python</li>
+                            <li class="skill-item">TypeScript</li>
+                            <li class="skill-item">JavaScript</li>
+                            <li class="skill-item">SQL</li>
+                            <li class="skill-item">C#</li>
+                            <li class="skill-item">Java</li>
+                            <li class="skill-item">PHP</li>
+                            <li class="skill-item">C</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-category">Frameworks</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">React Native</li>
+                            <li class="skill-item">React</li>
+                            <li class="skill-item">Node.js</li>
+                            <li class="skill-item">FastAPI</li>
+                            <li class="skill-item">Express</li>
+                            <li class="skill-item">Unity</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-category">Cloud &amp; DevOps</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">AWS</li>
+                            <li class="skill-item">Google Cloud</li>
+                            <li class="skill-item">Docker</li>
+                            <li class="skill-item">Git</li>
+                            <li class="skill-item">CI/CD</li>
+                            <li class="skill-item">WebSockets</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-category">Databases</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">MongoDB</li>
+                            <li class="skill-item">PostgreSQL</li>
+                            <li class="skill-item">SQLite</li>
+                            <li class="skill-item">Firebase</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-    </div>  
+            </div>
+        </section>
 
-    <body >
+        <!-- Education & Awards -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-heading animate">Education &amp; Awards</h2>
+                <div class="edu-grid">
+                    <article class="edu-card animate">
+                        <h3 class="edu-institution">Northern Kentucky University</h3>
+                        <p class="edu-degree">B.S. Applied Software Engineering</p>
+                        <p class="edu-meta">May 2026 &middot; GPA: 4.00</p>
+                    </article>
+                    <article class="edu-card animate">
+                        <h3 class="edu-institution">Northern Kentucky University</h3>
+                        <p class="edu-degree">B.S. Molecular Biology</p>
+                        <p class="edu-meta">May 2021 &middot; GPA: 3.99</p>
+                    </article>
+                    <article class="edu-card award animate">
+                        <p class="award-badge" aria-hidden="true">&#127942;</p>
+                        <h3 class="edu-institution">1st Place &mdash; Fidelity Hackathon</h3>
+                        <p class="edu-degree">&ldquo;Options, Please&rdquo; options-trading game built in 24 hours</p>
+                        <p class="edu-meta">Sept 2025 &middot; 1st of 10 teams</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-<!--=======================HOME==========================-->
-        <section class="hero">
-
-            <div class="hero-background"></div>
-            <div class="hero-content">
-                <h1>Welcome to Joey Ampfer's Portfolio</h1>
-                <p>From Medicine to Machine Learning: My Journey as a Software Engineer and Medical Scholar</p>
-                <a href="#portfolio" class="hero-btn">
-                    Explore My Work
-                    <i class="fa-solid fa-angles-down"></i>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <h2 class="section-heading animate">Get in Touch</h2>
+                <p class="contact-text animate">I'm open to new opportunities. Whether you have a question or just want to connect, feel free to reach out.</p>
+                <a href="mailto:joseph.ampfer@gmail.com" class="contact-email animate">
+                    <svg width="20" height="20"><use href="#icon-mail"/></svg>
+                    joseph.ampfer@gmail.com
                 </a>
-            </div>
-
-        </section>
-<!--=============================ABOUT===============================-->
-        <section id="about">
-
-            <div class="container">
-                <h2 class="about-heading">About Me</h2>
-                <p class="about-p">Hello! I'm Joey Ampfer, a passionate individual who has journeyed from the world of medicine to the realm of software engineering. My academic path began at the University of Kentucky College of Medicine, where I not only excelled as a medical student but also explored the fascinating intersection of healthcare and technology. This exploration led me to found the "AI in Medicine Interest Group" at UK COM, fostering a community keen on integrating AI into medical practices.</p>
-                <p class="about-p">Recently, I've pivoted towards software engineering, driven by a desire to directly impact technology in healthcare. I'm currently engaged in self-learning coding, having completed Harvard's renowned CS50 course, and am actively involved in various software projects. My journey is a testament to the power of interdisciplinary learning and the endless possibilities it brings.</p>
-                <div class="block-container">
-                    <div class="block">
-                        <h3>06+</h3>
-                        <p class="centered" style="font-size: 80%;">Programming languages</p>
-                    </div>
-                    <div class="block">
-                        <h3>03+</h3>
-                        <p class="centered" style="font-size: 80%;">Years professional experience</p>
-                    </div>
-                    <div class="block">
-                        <h3>10+</h3>
-                        <p class="centered" style="font-size: 80%;">Frameworks/ libraries</p>
-                    </div>
-                </div>
-                <a href="resume.pdf" class="more-link">
-                    Download Resume
-                    <i class="fa-solid fa-download"></i>
-                </a>
-            </div>
-
-        </section>
-
-<!--========================SKILLS==========================-->
-        <section id="skills">
-
-            <div class="container">
-                <h2 class="about-heading">Skills</h2>
-
-
-            </div>
-        
-<!--==========SKILLS ACCORDION============-->
-            <div class="container">
-                <div class="accordion-container">
-
-                    <div class="accordion accordion-flush first-accord " id="accordionFlushExample"  >
-                        <div class="accordion-item bg-black"  >
-                          <h2 class="accordion-header" id="flush-headingOne"  >
-                            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"  >
-                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 20px;" width="34" height="34" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
-                                    <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
-                                </svg>
-                                <div style="display: flex; flex-direction: column;">
-                                        Frontend
-                                    <div style="font-size: 80%;">
-                                        languages and libraries
-                                    </div>
-                                </div>
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body accord-words">
-                                HTML, CSS, JS, React Native
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="accordion accordion-flush second-accord" id="accordionFlushExample" >
-                        <div class="accordion-item bg-black">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 20px;" width="34" height="34" fill="currentColor" class="bi bi-hdd-network" viewBox="0 0 16 16">
-                                    <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5"/>
-                                </svg>
-                                <div style="display: flex; flex-direction: column;">
-                                    Backend
-                                    <div style="font-size: 80%;">
-                                        languages, frameworks, & db
-                                    </div>
-                                </div>
-
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body accord-words">
-                                Python, FastAPI, Flask, SQL, C, Java, PHP
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="accordion accordion-flush third-accord" id="accordionFlushExampe" >
-                        <div class="accordion-item bg-black">
-                          <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 20px;" width="34" height="34" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
-                                  </svg>
-                                  <div style="display: flex; flex-direction: column;">
-                                    Team
-                                    <div style="font-size: 80%;">
-                                        strengths and experience
-                                    </div>
-                                </div>
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body accord-words" >
-                                Leadership, Analyzing and Planning, Communication
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    
-                </div>
-            </div>
-
-        </section>
-            
-<!--================ACHIEVEMENTS NEW BOOTSTRAP===================-->
-        <section id="achievements">
-            <h2 class="centered">Achievements</h2>
-            <div class="card-container">
-                
-            
-                <div class="card text-bg-primary me-3 mt-4" style="width: 18rem;">
-                    <img src="images/aimed.png" class="card-img-top" alt="AI in Medicine Interest Group">
-                    <div class="card-body">
-                      <h5 class="card-title"><b>AI in Medicine</b></h5>
-                      <p class="card-text">Founder of AI in Medicine Interest Group at University of Kentucky College of Medicine</p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                  </div>
-                  <div class="card me-3 mt-4" style="width: 18rem;">
-                    <img src="images/award.jpg" class="card-img-top" alt="UK Student Award">
-                    <div class="card-body">
-                      <h5 class="card-title"><b>Top Student</b></h5>
-                      <p class="card-text">First year achievement award given to the top of the class at University of Kentucky College of Medicine.</p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                  </div>
-                  <div class="card mt-4" style="width: 18rem;">
-                    <img src="images/booksquare.png" class="card-img-top" alt="Book Cover">
-                    <div class="card-body">
-                      <h5 class="card-title"><b>Author</b></h5>
-                      <p class="card-text">Author of <i>Teeny Tiny Doctors</i>, a number one new release in children's biology books on Amazon.</p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                  </div>
-            
-            </div>
-        </section>
-<!--========================WORK AND EDUCATION=======================-->
-        <section id="work-education">
-            <div class="container">
-                <h2 class="centered">Work, Education and Research</h2>
-                <div class="button-container">
-<!--========================BUTTONS===============================-->
-                    <button onclick="show('education')" type="button" id="education-button" class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
-                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-                          </svg>
-                        Education
-                    </button>
-    
-                    <button onclick="show('research')" type="button" id="research-button" class="button">
-                        <i class="fa-solid fa-microscope"></i>
-                        Research
-                    </button>
-    
-                    <button onclick="show('work')" type="button" id="work-button" class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-                          </svg>
-                        Work
-                    </button>
-
-                </div>
-                
-
-
-<!--======================EDUCATION==========================-->
-                <div class="education wer hidden show grid-container">
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center; ">
-                        <img src="images/harvard (5).png" style="margin: auto;" class="card-img-top" alt="Harvard">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Software Engineering</b></h6>
-                          <h6 class="card-subtitle text-muted">Harvard CS50</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center; ">
-                        <img src="images/uk (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="UK College of Medicine">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Medical School</b></h6>
-                          <h6 class="card-subtitle text-muted">UK College of Medicine</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center; ">
-                        <img src="images/nku (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="NKU">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>BSc Cellular Molecular Biology</b></h6>
-                          <h6 class="card-subtitle text-muted">NKU</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center; ">
-                        <img src="images/nku (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="NKU">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>BSc Applied Software Engineering</b></h6>
-                          <h6 class="card-subtitle text-muted">NKU</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                </div>
-<!--================================WORK==============================-->                
-                <div class="work wer hidden">
-
-                  <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center;">
-                        <img src="images/ge-logo.png" style="margin: auto; border-radius: 50; height: 100%; width: 100%; object-fit: cover;" class="card-img-top" alt="GE Aerospace">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>DevOps & Cloud Engineering Intern</b></h6>
-                          <h6 class="card-subtitle text-muted">GE Aerospace</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center;">
-                        <img src="images/hospital (2).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="Cincinnati Children's">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Laboratory Technologist</b></h6>
-                          <h6 class="card-subtitle text-muted">Cincinnati Children's Hospital</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center;">
-                        <img src="images/uk (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="Harvard">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Standardized Patient</b></h6>
-                          <h6 class="card-subtitle text-muted">UK College of Medicine</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center;">
-                        <img src="images/nku (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="Harvard">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>SI Leader</b></h6>
-                          <h6 class="card-subtitle text-muted">Northern Kentucky University</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary border-light mx-1 mt-4" style="width: 9rem; display: flex; justify-content: center;">
-                        <img src="images/nku (3).png" style="margin: auto; border-radius: 50;" class="card-img-top" alt="Harvard">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Private Tutor</b></h6>
-                          <h6 class="card-subtitle text-muted">Northern Kentucky University</h6>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                </div>
-<!--==========================RESEARCH=============================-->
-                <div class="research wer hidden">
-
-                    <div class="card text-bg-primary mx-1 mt-4" style="width: 70%; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0, 0.1);">
-                        <img src="images/dna.jpg"  class="card-img-top" alt="Harvard">
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Molecular Genetics</b></h6>
-                          <description>Profiling The Compendium Of Changes In Saccharomyces cerevisiae Due To Mutations That Alter Availability Of The Main Methyl Donor S-Adenosylmethionine</description>
-                          <a href="https://pubmed.ncbi.nlm.nih.gov/38184845/" class="more-link">PubMed</a>
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary mx-1 mt-4" style="width: 16rem; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0, 0.1);">
-                        <!-- <img src="images/chem.jpg"  class="card-img-top" alt="Harvard"> -->
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Organic Chemistry</b></h6>
-                          <description>Identification and Optimization of Novel Small Molecule Inhibitors of mPGES-1</description>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary mx-1 mt-4" style="width: 16rem; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0, 0.1);">
-                        <!-- <img src="images/pph.jpg" style="height: 142px;"  class="card-img-top" alt="Harvard"> -->
-                        <div class="card-body">
-                          <h6 class="card-title"><b>Post-Partum Hemorrhage </b></h6>
-                          <description>Identifying the cause of the major discrepancy  between post-partum hemorrhage  cases in the U.S. vs Sweden.</description>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-
-                    <div class="card text-bg-primary mx-1 mt-4" style="width: 16rem; display: flex; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0, 0.1);">
-                        <!-- <img src="images/eye.webp"  class="card-img-top" alt="Harvard"> -->
-                        <div class="card-body">
-                          <h6 class="card-title"><b>AI in Eye Care</b></h6>
-                          <description>Identifying the attitudes and feelings towards AI in diabetic retinopathy care among patients in Kentucky.</description>
-                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                    </div>
-                    
+                <div class="contact-socials animate">
+                    <a href="https://github.com/joseph-ampfer" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub">
+                        <svg width="22" height="22"><use href="#icon-github"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/joseph-ampfer" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn">
+                        <svg width="22" height="22"><use href="#icon-linkedin"/></svg>
+                    </a>
                 </div>
             </div>
         </section>
 
-<!--===============================PORTFOLIO=======================-->
-        <section id="portfolio">
-            <div class="container two">
+    </main>
 
-                <h2 class="centered">Portfolio</h2>
-                <h6 class="centered grey">Most Recent Work</h6>
-
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                    </div>
-                    <div class="carousel-inner">
-
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/new-demo.gif" class="image2" alt="Chat 220 Demo">
-                          <div class="description">
-                            <h5><b>Chat 220</b></h5>
-                            <p>Multi-model chat platform: chat with various LLMs, analyze/generate images, and post to a public feed. Led a team to build a secure, scalable PWA with Google OAuth2, Node.js/Express, MongoDB, AWS S3, and GCP Cloud Run. Integrated 8 AI models, vision, speech, and more.</p>
-                            <div>Built with:</div>
-                            <div>- Node.js & Express.js</div>
-                            <div>- MongoDB</div>
-                            <div>- Google OAuth2</div>
-                            <div>- AWS S3</div>
-                            <div>- Docker</div>
-                            <div>- Google Cloud Platform</div>
-                            <div>- Progressive Web App (PWA)</div>
-                            <div class="button-container-two">
-                              <a href="https://chat220.com/chat" class="more-link-portfolio">
-                                Live Site
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                              <a href="https://github.com/joseph-ampfer/AI_Chat_220" class="more-link-portfolio">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                            <img src="images/Feature Graphic TGR.png" class="image2" alt="Touch Grass Royale Screenshot">
-                            <div class="description">
-                                <h5><b>Touch Grass Royale</b></h5>
-                                <p>Full-stack mobile app to promote lower screen time via gamification and competition among friends. Features a scalable backend (FastAPI, Cloud Run, Cloud SQL, Firebase), closed Play Store testing, and frequent OTA updates.</p>
-                                <div>Built with:</div>
-                                <div>- React Native</div>
-                                <div>- FastAPI</div>
-                                <div>- Google Cloud Platform (Cloud Run, Cloud SQL)</div>
-                                <div>- Firebase</div>
-                                <div>- Docker</div>
-                                <div>- PostgreSQL</div>
-                                <div class="button-container-two">
-                                    <a href="https://www.youtube.com/watch?v=KHtSEtDAOKI" class="more-link-portfolio">
-                                        Video Demo
-                                        <i class="fa-solid fa-arrow-right arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/ge-logo.png" class="image2" alt="GE Aerospace Self-Service Deployment Platform">
-                          <div class="description">
-                            <h5><b>Self-Service Deployment Platform</b></h5>
-                            <p>Architected and built a self-service CI/CD platform at GE Aerospace for launching Streamlit apps. Automated the entire pipeline (GitHub → CodeBuild → ECR → ECS Fargate → ELB) with AWS CodePipeline, reducing build-to-deployment time to 5 minutes. Developed a FastAPI backend and web UI for one-click repo setup, implemented OIDC authentication, and created an auth middleware proxy container to restrict app access to selected teams. Designed, built, and deployed the whole platform myself, behind an ALB.</p>
-                            <div>Built with:</div>
-                            <div>- AWS CodePipeline, CodeBuild, ECR, ECS Fargate, ELB, ALB</div>
-                            <div>- FastAPI</div>
-                            <div>- Streamlit</div>
-                            <div>- OIDC Authentication</div>
-                            <div>- Auth Middleware Proxy (Docker)</div>
-                            <div>- GitHub</div>
-                            <div class="button-container-two">
-                              <!-- Add links if available -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/ai-tic-tac-toe.mp4 (1).gif" class="image" alt="AI Tic Tac Toe Demo">
-                          <div class="description">
-                            <h5><b>AI Tic Tac Toe</b></h5>
-                            <p>Polished cross-platform mobile Tic Tac Toe app built with React Native and Expo. Features local two-player, random AI, and unbeatable Minimax AI with alpha-beta pruning. Modern React practices, engaging animations, and responsive layouts for iOS and Android.</p>
-                            <div>Built with:</div>
-                            <div>- React Native</div>
-                            <div>- Expo</div>
-                            <div>- JavaScript</div>
-                            <div>- React Navigation</div>
-                            <div>- react-native-reanimated</div>
-                            <div>- LottieView</div>
-                            <div>- Tailwind CSS (twrnc)</div>
-                            <div class="button-container-two">
-                              <a href="https://github.com/joseph-ampfer/React_Native_AI_TicTacToe" class="more-link-portfolio">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/U Collab screenshot.JPG" class="image2" alt="U Collab Screenshot">
-                          <div class="description">
-                            <h5><b>U Collab</b></h5>
-                            <p>Campus-focused CMS web app for university students to share project ideas, comment, and like posts. Includes full CRUD workflows, user authentication, and role-based access (public, member, admin). Includes profile management and admin dashboard. Team of 2; I led SQL/backend logic, admin tools, and profile updates.</p>
-                            <div>Built with:</div>
-                            <div>- PHP</div>
-                            <div>- Bootstrap 5</div>
-                            <div>- MySQL (PDO)</div>
-                            <div>- JavaScript/AJAX</div>
-                            <div>- Git/GitHub</div>
-                            <div>- Apache</div>
-                            <div class="button-container-two">
-                              <a href="https://github.com/joseph-ampfer/ASE230-Midterm" class="more-link-portfolio">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                              <a href="https://www.youtube.com/watch?v=1yWEDlKPLy8" class="more-link-portfolio">
-                                Video Walkthrough
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                            <img src="images/AMPFER Finance screenshot.png" class="image" alt="AMPFER Finance Screenshot">
-                            <div class="description">
-                                <h5><b>AMPFER Finance</b></h5>
-                                <p>A cross-platform mobile app to virtually trade stocks. Users can trade stocks with up-to-date quotes, monitor their portfolio, and make multiple accounts.</p>
-                                <div>Built with:</div>
-                                <div>- React Native</div>
-                                <div>- Expo</div>
-                                <div>- Flask</div>
-                                <div>- SQLite</div>
-                                <div>- JSONSchema</div>
-                                <div>- JSON Web Token</div>
-                                <div>- Flask-JWT-Extended</div>
-                                <div class="button-container-two">
-                                    <a href="https://github.com/joseph-ampfer/AmpferFinance" class="more-link-portfolio">
-                                        GitHub 
-                                        <i class="fa-solid fa-arrow-right arrow"></i>
-                                    </a>
-                                    <a href="https://youtu.be/S4Dbx1y-LkQ" class="more-link-portfolio">
-                                        Video Demo
-                                        <i class="fa-solid fa-arrow-right arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/petshelter2.JPG" class="image2" alt="Best Pet Shelter Screenshot">
-                          <div class="description">
-                            <h5><b>Best Pet Shelter</b></h5>
-                            <p>Pet Shelter Management Application built as a 3-person team. Designed a responsive UI with Bootstrap 5, dynamic pet cards, and detail pages. Implemented create/delete workflows, and integrated a Node.js/Express REST API with persistent JSON storage. Led front-end and back-end integration, API compliance, and GitHub-based collaboration.</p>
-                            <div>Built with:</div>
-                            <div>- HTML5</div>
-                            <div>- CSS3</div>
-                            <div>- JavaScript</div>
-                            <div>- Bootstrap 5</div>
-                            <div>- Node.js & Express</div>
-                            <div>- RESTful API</div>
-                            <div>- Git/GitHub</div>
-                            <div class="button-container-two">
-                              <a href="https://github.com/tomlinl1/ASE220-02-pet-management-application/tree/part-3" class="more-link-portfolio">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                          <img src="images/uat-gif2.gif" class="image2" alt="INF 286 UAT Website Redesign Demo">
-                          <div class="description">
-                            <h5><b>UAT Website Redesign</b></h5>
-                            <p>Led UI/UX redesign for UAT’s website as front-end developer and UX designer. Audited and fixed 11+ usability issues, consolidated color palette, optimized navigation and animations, and ensured responsive layouts. Deployed via GitHub Pages for rapid feedback and iteration.</p>
-                            <div>Built with:</div>
-                            <div>- HTML5</div>
-                            <div>- CSS3</div>
-                            <div>- JavaScript</div>
-                            <div>- GitHub Pages</div>
-                            <div class="button-container-two">
-                              <a href="https://github.com/joseph-ampfer/INF286_Team_Project" class="more-link-portfolio">
-                                GitHub
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                              <a href="https://joseph-ampfer.github.io/INF286_Team_Project/" class="more-link-portfolio">
-                                Website
-                                <i class="fa-solid fa-arrow-right arrow"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <div class="in-carousel">
-                            <img src="images/website-snip 2.JPG" class="image2" alt="Webpage">
-                            <div class="description">
-                                <h5><b>Personal Website</b></h5>
-                                <p>A dynamic and responsive personal site, featuring JS for interactive elements. A minimalist design with a focus on content.</p>
-                                <div>Built with:</div>
-                                <div>- HTML</div>
-                                <div>- CSS (grid and flexbox)</div>
-                                <div>- Vanilla JS</div>
-                                <div>- Bootstrap</div>
-                                <div>- Pretty Forms Designer</div>
-                                <div class="button-container-two">
-                                    <a href="https://github.com/joseph-ampfer/joseph-ampfer.github.io" class="more-link-portfolio">
-                                        GitHub 
-                                        <i class="fa-solid fa-arrow-right arrow"></i>
-                                    </a>
-                                    <a href="#" class="more-link-portfolio">
-                                        Demo
-                                        <i class="fa-solid fa-arrow-right arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-
-            </div>
-        </section>
-
-<!--============================CONTACT========================-->
-    <section id="contact">
-        <div class="container contact">
-
-            <h2 class="centered">Contact Me</h2>
-            <h6 class="centered grey">Get in Touch</h6>
-            <div class="contact-whole-container">
-
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4 class="contact-title">Call/Text</h4>
-                            <span class="contact-subtitle">(859) 638-7358</span>
-                        </div>
-                    </div>
-        
-                    <div class="contact-info">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4 class="contact-title">Email</h4>
-                            <span class="contact-subtitle">joseph.ampfer@gmail.com</span>
-                        </div>
-                    </div>
-        
-                    <div class="contact-info">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4 class="contact-title">Location</h4>
-                            <span class="contact-subtitle">United States</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFht3YUyU_0taNGnpkIiJ5Ik4Y4QniG0J0wywyipLM68Vjsg/viewform?embedded=true" width="400" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
-                <iframe src="https://fm.addxt.com/form/?vf=1FAIpQLSeFht3YUyU_0taNGnpkIiJ5Ik4Y4QniG0J0wywyipLM68Vjsg" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-            </div>
-    
-        
+    <footer class="site-footer">
+        <div class="container">
+            <p>Crafted with HTML, CSS, and JavaScript. No frameworks.</p>
+            <p>&copy; 2026 Joseph Ampfer</p>
         </div>
-    </section>        
+    </footer>
 
-<!--==============PROJECTS OLD==============-->
-        <!-- <section id="current-projects">
-
-            <div class="container">
-                <h2>Current Projects</h2>
-               f <div class="project">
-                    <h3>AI in Medicine Interest Group</h3>
-                    <p>Leading the AI in Medicine Interest Group at the University of Kentucky College of Medicine, focusing on discussing and promoting the use of artificial intelligence in healthcare.</p>
-                </div>
-                <div class="project">
-                    <h3>Self-Learning Journey in Coding</h3>
-                    <p>Actively engaged in self-learning coding, having recently completed Harvard's CS50 course. Currently working on various software development projects to apply my learning.</p>
-                </div>
-            </div>
-
-        </section> -->
-
-<!--===========================FOOTER======================-->
-        <section id="footer">
-            <div class="footer">
-
-                <div class="footer-name">
-                    <h5>Joey Ampfer</h5>
-                    <div style="font-size: 12px;">Fullstack Developer</div>
-                </div>
-            
-                <div class="footer-links">
-                    <a href="#about" >Resume</a>
-                    <a href="#portfolio" >Portfolio</a>
-                    <a href="#contact" >Contact</a>
-                </div>
-            
-                <div class="footer-brands">
-                    <a href="https://www.linkedin.com/in/joey-ampfer-5145b918b">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/joseph-ampfer">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-
-            </div>
-            <footer>
-                Copyright &#169; Joey Ampfer 1999
-            </footer>
-        </section>
-
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
